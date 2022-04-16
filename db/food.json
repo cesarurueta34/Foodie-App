@@ -1,0 +1,17 @@
+[
+    {
+        "name": "Dewey's Pizza" , 
+        "visited": true ,
+        "website": "https://deweyspizza.com/menu/from-the-kitchen/" ,
+        "recommend": true , 
+        "image": "https://deweyspizza.com/wp-content/uploads/2019/03/facebook_pizzas_1.jpg"
+    } , 
+
+    {
+        "name": "The Schlafly Tap Room" , 
+        "visited": true , 
+        "website": "https://www.schlafly.com/tap-room-brewpub/" , 
+        "recommend": true ,
+        "image": "https://www.schlafly.com/wp-content/uploads/2018/01/TapRoom_Web_Thumb.jpg" 
+    }
+]
