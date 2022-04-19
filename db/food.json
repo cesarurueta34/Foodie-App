@@ -2,8 +2,7 @@
     {
         "name": "Dewey's Pizza" , 
         "visited": true ,
-        "website": "https://deweyspizza.com/menu/from-the-kitchen/" ,
-        "recommend": true , 
+        "website": "https://deweyspizza.com/menu/from-the-kitchen/" , 
         "image": "https://deweyspizza.com/wp-content/uploads/2019/03/facebook_pizzas_1.jpg"
     } , 
 
@@ -13,5 +12,25 @@
         "website": "https://www.schlafly.com/tap-room-brewpub/" , 
         "recommend": true ,
         "image": "https://www.schlafly.com/wp-content/uploads/2018/01/TapRoom_Web_Thumb.jpg" 
+    } , 
+    {
+        "name": "Sugar Fire Smokehouse" , 
+        "visited": false , 
+        "website": "https://sugarfiresmokehouse.com/" , 
+        "image": "https://images.squarespace-cdn.com/content/v1/53f36e11e4b0a13f9746ea12/1507756699719-FCDXG9OE4BVM2XYR8DGH/Sugarfire+07.jpg?format=1000w" 
+    } , 
+
+    {
+        "name": "PW Pizza" , 
+        "visited": true , 
+        "website": "https://pwpizza.com/" , 
+        "image": "https://pwpizza.com/wp-content/uploads/2017/02/pw_pizza_interior.png" 
+    } ,
+    {
+        "name": "Square One Brewery & Distillery" , 
+        "visited": false , 
+        "website": "https://squareonebrewery.com/" , 
+        "image": "http://squareonebrewery.com/wp-content/uploads/2017/04/logo-red-box.png" 
     }
+    
 ]
