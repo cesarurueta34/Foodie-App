@@ -1,0 +1,23 @@
+<header>
+    <h1>Edit a Place!</h1>
+</header>
+
+<form action="/{{data.id}}?_method=put" method="POST">
+  <div class="form-group">
+    <label for="name">Name:</label>
+    <input type="text" name="name" value="{{data.name}}" class="form-control" />
+
+    <label for="visited">Have you Visited? Check the box!</label>
+    <input type="checkbox" name="visited" value="true"class="form-control" />
+    <label for="true">
+
+    <label for="website">Website:</label>
+    <input type="text" name="website" value="{{data.website}}" class="form-control" />
+
+    <label for="image">Image:</label>
+    <input type="text" name="image" value="{{data.image}}" class="form-control" />
+  </div>
+  <input type="submit" class="btn btn-primary" />
+  <a href="/" class="btn btn-secondary">Cancel</a>
+</form>
+

@@ -47,9 +47,23 @@ router.post(`/` , (req, res) => {
 router.get(`/details/:id` , (req, res) => {
     const id = req.params.id
     Food.findById(id).then((data)=> {
-        res.send(data)
+        res.render(`details`, { data })
     })
 })
 
+router.get(`/edit/:id` , (req, res) => {
+    const id = req.params.id
+    Food.findById(id).then((data)=> {
+        res.render(`edit`, { data })
+    })
+})
+
+
+router.put(`/:id` , (req, res) => {
+    const id = req.params.id
+    Food.findOneAndUpdate({_id: id} , req.body).then((data) => {
+        res.redirect(`/`)
+    })
+})
 
 module.exports = router
