@@ -32,7 +32,24 @@ router.get(`/new` , (req, res) => {
 })
 
 router.post(`/` , (req, res) => {
+
+//fetch API using the name of the restaurant
+//get response from API 
+//get name image we
+
+// Food.create(replace in here what the API shoots out for).then((data) => res.redirect(`/`))
+// })
+
     Food.create(req.body).then((data) => res.redirect(`/`))
 })
+
+
+router.get(`/details/:id` , (req, res) => {
+    const id = req.params.id
+    Food.findById(id).then((data)=> {
+        res.send(data)
+    })
+})
+
 
 module.exports = router

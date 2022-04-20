@@ -1,7 +1,7 @@
 const mongoose = require(`./connection`);
 const FoodSchema = new mongoose.Schema({
     name: String, 
-    visited: Boolean, 
+    visited: {type: Boolean, default: false} ,  
     website: String, 
     recommend: Boolean, 
     image: String, 
