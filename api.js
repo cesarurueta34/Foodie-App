@@ -1,10 +1,10 @@
 
-API_KEY = `R3LfXNvOtZBUaHIudjYE2OQiICffJ8mtCv8Ieb43s_jbzMCExqIeq9stWswnHI_3L0PLnU7iYL59SB1Et7HTsR7KqX9x-CY2Jbjj9TmkXAXLXzGMxzKKJnw_3n5fYnYx`
+// API_KEY = `R3LfXNvOtZBUaHIudjYE2OQiICffJ8mtCv8Ieb43s_jbzMCExqIeq9stWswnHI_3L0PLnU7iYL59SB1Et7HTsR7KqX9x-CY2Jbjj9TmkXAXLXzGMxzKKJnw_3n5fYnYx`
 
-const yelp = require(`yelp-fusion`)
-const client = yelp.client(API_KEY)
+// const yelp = require(`yelp-fusion`)
+// const client = yelp.client(API_KEY)
 
-// client.search({
+// // client.search({
 //     term: `Dewey's Pizza` , 
 //     location: `St. Louis`
 // }).then(response => {
@@ -33,23 +33,23 @@ const client = yelp.client(API_KEY)
 //     console.log(e)
 // })
 
-client.search({
-    term: `Urban Chestnut Brewery` , 
-    location: `St. Louis`
-}).then(response => {
-    console.log(response.jsonBody.businesses[0])
-}).catch(e => {
-    console.log(e)
-})
+// client.search({
+//     term: `Urban Chestnut Brewery` , 
+//     location: `St. Louis`
+// }).then(response => {
+//     console.log(response.jsonBody.businesses[0])
+// }).catch(e => {
+//     console.log(e)
+// })
 
-client.search({
-    term: `O Connell's Pub` , 
-    location: `St. Louis`
-}).then(response => {
-    console.log(response.jsonBody.businesses[0])
-}).catch(e => {
-    console.log(e)
-})
+// client.search({
+//     term: `O Connell's Pub` , 
+//     location: `St. Louis`
+// }).then(response => {
+//     let data = response.jsonBody.businesses[0]
+//     console.log(data)
+//     console.log(data.name)
+// })
 
 // client.search({
 //     term: `Tres Margaritas` , 

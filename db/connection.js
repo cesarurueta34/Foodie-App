@@ -1,11 +1,10 @@
 const mongoose = require("mongoose")
-require('dotenv').config();
+// require('dotenv').config({path: `env`});
 
 const mongoURI = 
     process.env.NODE_ENV === 'production'
         ? process.env.DB_URL
-        : process.env.DEV_DB_URL
-      //  : "mongodb+srv://food:food123@cluster0.hqw2u.mongodb.net/foodData?retryWrites=true&w=majority"
+        : "mongodb+srv://food:food123@cluster0.hqw2u.mongodb.net/foodData?retryWrites=true&w=majority"
 
 mongoose
     .connect(mongoURI)
