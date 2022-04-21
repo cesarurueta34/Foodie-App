@@ -67,12 +67,21 @@ router.get(`/edit/:id` , (req, res) => {
     })
 })
 
-
+//need to figure out what is up with my checkbox and how to make it default
 router.put(`/:id` , (req, res) => {
     const id = req.params.id
     Food.findOneAndUpdate({_id: id} , req.body).then((data) => {
         res.redirect(`/`)
     })
 })
+
+router.delete("/:id", (req, res) => {
+    const id = req.params.id;
+    Food.findOneAndRemove({ _id: id }).then((items) => {
+        res.redirect("/")
+    });
+});
+
+
 
 module.exports = router
