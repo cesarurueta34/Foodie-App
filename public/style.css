@@ -33,6 +33,7 @@ body{
     height: 20vw;
     width: 40vw;
     border-radius: 25%;
+    text-align: center;
 
 }
 
@@ -42,4 +43,10 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.b-text {
+    text-align: center;
+    font-size: 2em;
+    padding: .2vw;
 }

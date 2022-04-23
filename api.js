@@ -51,14 +51,14 @@
 //     console.log(data.name)
 // })
 
-// client.search({
-//     term: `Tres Margaritas` , 
-//     location: `Longmont`
-// }).then(response => {
-//     console.log(response.jsonBody.businesses[0].name)
-// }).catch(e => {
-//     console.log(e)
-// })
+client.search({
+    term: `Tres Margaritas` , 
+    location: `Longmont`
+}).then(response => {
+    console.log(response.jsonBody.businesses[0].name)
+}).catch(e => {
+    console.log(e)
+})
 
 
 
