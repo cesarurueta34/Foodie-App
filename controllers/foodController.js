@@ -75,7 +75,11 @@ router.get(`/edit/:id` , (req, res) => {
 router.put(`/:id` , (req, res) => {
     const id = req.params.id
     Food.findOneAndUpdate({_id: id} , req.body).then((data) => {
-        res.redirect(`/`)
+        if(data.visited){
+            res.redirect(`/visited`)
+        } else {
+            res.redirect(`/wishlist`)
+        }
     })
 })
 
