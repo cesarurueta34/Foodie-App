@@ -2,6 +2,7 @@ const express = require(`express`);
 const methodOverride = require(`method-override`);
 const path = require(`path`);
 const foodController = require(`./controllers/foodController`);
+require(`dotenv`).config()
 
 const app = express();
 

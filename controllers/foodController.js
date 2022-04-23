@@ -1,25 +1,9 @@
 const express = require(`express`);
 const Food = require(`../db/schema`);
 const router = express.Router()
-const API_KEY = `R3LfXNvOtZBUaHIudjYE2OQiICffJ8mtCv8Ieb43s_jbzMCExqIeq9stWswnHI_3L0PLnU7iYL59SB1Et7HTsR7KqX9x-CY2Jbjj9TmkXAXLXzGMxzKKJnw_3n5fYnYx`
 
 const yelp = require(`yelp-fusion`)
-const client = yelp.client(API_KEY)
-
-// router.get(`/` , (req, res) => {
-//     Food.find({}).then((data) => {
-//         res.send(data)
-//     })
-// })
-
-//yelp CLIENT ID KEY
-// rptN_uieCuDQhPNy2401Lw
-
-//yelp API KEY 
-//R3LfXNvOtZBUaHIudjYE2OQiICffJ8mtCv8Ieb43s_jbzMCExqIeq9stWswnHI_3L0PLnU7iYL59SB1Et7HTsR7KqX9x-CY2Jbjj9TmkXAXLXzGMxzKKJnw_3n5fYnYx
-
-
-
+const client = yelp.client(process.env.API_KEY)
 
 
 router.get(`/` , (req, res) => {
@@ -48,6 +32,7 @@ router.post(`/` , (req, res) => {
     const nameSearch = `${req.body.name}`
    // console.log(nameSearch)
     const locSearch = `${req.body.location}`
+    console.log(req.body)
     //console.log(locSearch)
     client.search({
         term: nameSearch , 
@@ -60,12 +45,11 @@ router.post(`/` , (req, res) => {
             name: info.name , 
             image: info.image_url , 
             price: info.price , 
-            website: info.url
-
-           // visited: `${Food.create(req.body.visited)}`, 
+            website: info.url , 
+            visited: req.body.visited ? true : false
         }
         //console.log(x.visited)
-        Food.create(x).then((data) => res.redirect(`/`))
+        Food.create(x).then((data) => res.render(`details` , {data} ))
     })
    
 

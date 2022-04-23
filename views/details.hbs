@@ -1,13 +1,17 @@
-<h1>Details:</h1>
-
-
-<p>{{data.name}}</p>
 </br>
-<p>{{data.website}}</p>
+ <a href="/" class="btn btn-secondary">Go home </a>
+<h1>{{data.name}}</h1>
 </br>
-<p>{{data.image}}</p>
-<p>{{data.location}}</p>
-<p>{{data.price}}</p>
+<h3>Price Level: {{data.price}}</h3>
+</br>
+<p> Check out what other people are saying on yelp! <a href="{{data.website}}">{{data.website}}</a></p>
+</br>
+</br>
+<div class="detail-div">
+<h4>Mmmmm Yummy lol</h4>
+<img class ="detail-image" src={{data.image}}>
+</div>
+
 
 
   {{!-- let x = {

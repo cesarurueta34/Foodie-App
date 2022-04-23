@@ -5,7 +5,10 @@ const FoodSchema = new mongoose.Schema({
     website: String, 
     recommend: Boolean, 
     image: String, 
-    location: String
+    location: String, 
+    city: String, 
+    price: String, 
+    address1: String
 });
 
 const Food = mongoose.model(`restaurants`, FoodSchema)
