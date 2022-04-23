@@ -22,9 +22,24 @@ body{
 }
 
 .main-title {
+    padding: 2vw;
     font-size: 10vw ;
     text-align: center;
 }
 
+.general-b{
+    padding: 20px;
+    margin: 20px;
+    height: 20vw;
+    width: 40vw;
+    border-radius: 25%;
 
+}
 
+.holder {
+    padding: 10vw;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
