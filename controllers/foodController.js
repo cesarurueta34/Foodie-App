@@ -82,7 +82,11 @@ router.put(`/:id` , (req, res) => {
 router.delete("/:id", (req, res) => {
     const id = req.params.id;
     Food.findOneAndRemove({ _id: id }).then((items) => {
-        res.redirect("/")
+        if (items.visited) {
+            res.redirect(`/visited`)
+        } else {
+            res.redirect(`/wishlist`)
+        }
     });
 });
 
