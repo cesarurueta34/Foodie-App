@@ -11,4 +11,12 @@ body{
     max-height: 100%;
 }
 
+.index {
+    position: absolute; 
+    top: 0px;
+    bottom: 0px; 
+    right: 0px; 
+    left: 0px;
+    height: 100vh; 
+}
 
