@@ -32,23 +32,29 @@ router.post(`/` , (req, res) => {
     const nameSearch = `${req.body.name}`
    // console.log(nameSearch)
     const locSearch = `${req.body.location}`
-    console.log(req.body)
+    // console.log(req.body)
     //console.log(locSearch)
     client.search({
         term: nameSearch , 
         location: locSearch , 
     }).then((response) => {
         let info = response.jsonBody.businesses[0]
-        //console.log(info)
+        // console.log(info)
         //the visited is coming up as on object promise and wont return my value
+    //   console.log(info.location.display_address)
+      let dispAddress = info.location.display_address.join(`, `)
+    //   console.log(dispAddress)
         let x = {
             name: info.name , 
             image: info.image_url , 
             price: info.price , 
             website: info.url , 
-            visited: req.body.visited ? true : false
+            visited: req.body.visited ? true : false , 
+            comments: req.body.comments , 
+            address: dispAddress , 
+            phone: info.display_phone
         }
-        //console.log(x.visited)
+        // console.log(x)
         Food.create(x).then((data) => res.render(`details` , {data} ))
     })
    
