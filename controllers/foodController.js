@@ -30,20 +30,13 @@ router.get(`/new` , (req, res) => {
 
 router.post(`/` , (req, res) => {
     const nameSearch = `${req.body.name}`
-   // console.log(nameSearch)
     const locSearch = `${req.body.location}`
-    // console.log(req.body)
-    //console.log(locSearch)
     client.search({
         term: nameSearch , 
         location: locSearch , 
     }).then((response) => {
         let info = response.jsonBody.businesses[0]
-        // console.log(info)
-        //the visited is coming up as on object promise and wont return my value
-    //   console.log(info.location.display_address)
       let dispAddress = info.location.display_address.join(`, `)
-    //   console.log(dispAddress)
         let x = {
             name: info.name , 
             image: info.image_url , 
@@ -54,15 +47,11 @@ router.post(`/` , (req, res) => {
             address: dispAddress , 
             phone: info.display_phone
         }
-        // console.log(x)
         Food.create(x).then((data) => res.render(`details` , {data} ))
     })
    
 
 })
-
-
-
 
 router.get(`/details/:id` , (req, res) => {
     const id = req.params.id
@@ -77,7 +66,6 @@ router.get(`/edit/:id` , (req, res) => {
     })
 })
 
-//need to figure out what is up with my checkbox and how to make it default
 router.put(`/:id` , (req, res) => {
     const id = req.params.id
     Food.findOneAndUpdate({_id: id} , req.body).then((data) => {
@@ -88,8 +76,6 @@ router.put(`/:id` , (req, res) => {
         }
     })
 })
-
-
 
 router.delete("/:id", (req, res) => {
     const id = req.params.id;
@@ -112,7 +98,5 @@ router.delete("/details/:id", (req, res) => {
         }
     });
 });
-
-
 
 module.exports = router
