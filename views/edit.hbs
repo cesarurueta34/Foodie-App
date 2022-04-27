@@ -22,8 +22,9 @@
 
     {{#unless data.visited}}
     <label for="visited">Have you Visited? Check the box!</label>
-    <input type="checkbox" name="visited" value="true"class="form-control" />
-    <label for="true">
+    </br>
+    <input type="checkbox" name="visited" value="true"class="boxBig" />
+    </br>
         {{/unless}}
     <label for="website">Website:</label>
     <input type="text" name="website" value="{{data.website}}" class="form-control" />
@@ -31,6 +32,7 @@
     <label for="image">Image:</label>
     <input type="text" name="image" value="{{data.image}}" class="form-control" />
   </div>
+  </br>
   <input type="submit" class="btn btn-primary" />
   {{#if data.visited}}
   <a href="/visited" class="btn btn-secondary">Cancel</a>

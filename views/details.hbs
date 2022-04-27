@@ -14,7 +14,9 @@
 </br>
 <h3>Phone: <a href="tel:{{data.phone}}">{{data.phone}}</a></h3>
 </br>
-<h3>Address: {{data.address}}</h3>
+<h3>Address: <a href="https://www.google.com/maps/search/?api=1&query={{data.address}}
+
+">{{data.address}}</a></h3>
 </br>
 <h3> Link to more info! <a href="{{data.website}}">{{data.website}}</a></h3>
 </br>
@@ -26,5 +28,7 @@
 
 </br>
  <a href="/edit/{{data.id}}" class="btn btn-secondary">Edit</a>
+  <form action="/details/{{data.id}}?_method=DELETE" method="POST" class="d-inline">
+     <input type="submit" value="Delete" class="btn btn-danger" />
+  </form>
 
- </div>
