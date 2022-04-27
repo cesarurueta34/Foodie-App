@@ -23,7 +23,7 @@ body{
 }
 
 .main-title {
-    padding: 2vw;
+    padding-top: 5vw;
     font-size: 10vw ;
     text-align: center;
 }
@@ -96,8 +96,8 @@ textarea {
 }
 
 .boxBig{
-    width: 200px;
-    height: 200px;
+    width: 8rem;
+    height: 8rem;
     background-color: lightgray;
 }
 
@@ -108,4 +108,19 @@ textarea {
     transform: translateY(-50%);
     overflow: hidden;
     font-size: 3rem;
+}
+
+.new-submit {
+    overflow: hidden;
+}
+
+.little-box {
+    width: 2.2rem;
+    height: 2.2rem;
+    display: inline-block;
+    transform: translateY(40%);
+}
+
+.lil-sub-text{
+    padding-top: 1rem;
 }

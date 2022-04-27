@@ -89,6 +89,19 @@ router.put(`/:id` , (req, res) => {
     })
 })
 
+// router.put(`/wishlist` , (req, res) => {
+//     const id = req.params.id
+//     Food.findOneAndUpdate({_id: id} , req.body).then((data) => {
+//         if(data.visited){
+//             res.redirect(`/visited`)
+//         } else {
+//             res.redirect(`/wishlist`)
+//         }
+//     })
+// })
+
+
+
 router.delete("/:id", (req, res) => {
     const id = req.params.id;
     Food.findOneAndRemove({ _id: id }).then((items) => {

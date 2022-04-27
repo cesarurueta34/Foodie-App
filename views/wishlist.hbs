@@ -20,6 +20,15 @@
                        <form action="/{{this.id}}?_method=DELETE" method="POST" class="d-inline">
                             <input type="submit" value="Delete" class="btn btn-danger" />
                         </form>
+                    
+                        <form action="/{{this.id}}?_method=put" method="POST">
+                        <label for="visited"><p class="lil-sub-text">Check the box to add to visited! Then press submit.</p></label>
+                        <div class="little-div">
+                        <input type="checkbox" name="visited" value="true" class="little-box" />
+                        <input type="submit" class="btn btn-primary" class="size" />
+                        </div>
+                        </form>
+                
                 </div>
             </div>
             <div class="d-flex" >
