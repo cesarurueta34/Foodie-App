@@ -118,12 +118,19 @@ textarea {
 }
 
 .little-box {
-    width: 2.2rem;
-    height: 2.2rem;
+    width: 5vw;
+    height: 5vh;
+    display: inline-block;
+    transform: translateY(40%);
+    padding-bottom: 2rem;
+    margin-bottom: 3vh;
+}
+.size {
+    width: 5vw;
+    height: 5vh;
     display: inline-block;
     transform: translateY(40%);
 }
-
 .lil-sub-text{
     padding-top: 1rem;
 }
