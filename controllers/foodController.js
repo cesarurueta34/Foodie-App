@@ -47,10 +47,11 @@ router.post(`/` , (req, res) => {
             address: dispAddress , 
             phone: info.display_phone
         }
+        .catch((error) => {
+            res.render(`index` , (error))
+        })
         Food.create(x).then((data) => res.render(`details` , {data} ))
     })
-   
-
 })
 
 router.get(`/details/:id` , (req, res) => {
