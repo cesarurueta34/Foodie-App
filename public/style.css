@@ -140,3 +140,8 @@ textarea {
     transform:translateX(20%);
     padding: 20vw;
 }
+
+
+.error {
+    font-size: 3rem;
+}

@@ -27,6 +27,9 @@ router.get(`/wishlist` , (req, res) => {
 router.get(`/new` , (req, res) => {
     res.render(`new`)
 })
+router.get(`/error` , (req, res) => {
+    res.render(`error`)
+})
 
 router.post(`/` , (req, res) => {
     const nameSearch = `${req.body.name}`
@@ -47,10 +50,9 @@ router.post(`/` , (req, res) => {
             address: dispAddress , 
             phone: info.display_phone
         }
-        .catch((error) => {
-            res.render(`index` , (error))
-        })
         Food.create(x).then((data) => res.render(`details` , {data} ))
+    }) .catch ((error) => {
+        res.redirect(`/error`)
     })
 })
 
