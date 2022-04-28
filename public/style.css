@@ -44,6 +44,9 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 100%;
+    max-width: 1000px;
+    overflow: hidden;
 }
 
 
@@ -107,7 +110,7 @@ textarea {
     top: 50%;
     transform: translateY(-50%);
     overflow: hidden;
-    font-size: 3rem;
+    font-size: 4vw;
 }
 
 .new-submit {
@@ -127,5 +130,6 @@ textarea {
 
 .main-page-butns {
     align-items: center;
-    transform: translateX(15%);
+    transform:translateX(20%);
+    padding: 20vw;
 }
