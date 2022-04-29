@@ -1,6 +1,6 @@
 # Foodie-App
-**
-Technologies Used**
+
+**Technologies Used**
   1. HTML
   2. HBS 
   3. CSS
