@@ -1,6 +1,6 @@
 # Foodie-App
 
-**Technologies Used**
+****Technologies Used****
   1. HTML
   2. HBS 
   3. CSS
@@ -10,33 +10,50 @@
   7. Mongoose
   8. Bootstrap
 
-**Project Description**
+****Project Description****
 
-A personal application that serves as a "wishlist" and record of places you want to try or have already visited! This is meant to replae keeping track of recommendations in my phone's notes. The app uses the YELP API to populate business data. 
+A personal application that serves as a "wishlist" and record of places you want to try or have already visited! This is meant to replace keeping track of recommendations in my phone's notes. The app uses the YELP API to populate business data. 
 
-**Views**
+****Page Views****
 
-![image](https://user-images.githubusercontent.com/97326874/165868734-7b2eda02-a6a7-4e18-ae29-94d54a802a30.png)
+**Home**  
 
-![image](https://user-images.githubusercontent.com/97326874/165868755-87ebfe55-31a4-44b1-847e-46cd304a299a.png)
+![Screen Shot 2022-04-28 at 7 36 05 PM](https://user-images.githubusercontent.com/97326874/165869319-a9248cbd-5564-41d4-8051-3a6d0a9a5900.png)
 
-![image](https://user-images.githubusercontent.com/97326874/165868803-793c767f-691d-45de-900e-ae97d24cf66c.png)
+**Add**  
 
-![image](https://user-images.githubusercontent.com/97326874/165868832-13307606-65bc-440c-a341-8144c590b0ba.png)
-
-![image](https://user-images.githubusercontent.com/97326874/165868850-f61ae0ca-c369-4b1a-a6c9-2e0cb5fb3bfd.png)
-
-![image](https://user-images.githubusercontent.com/97326874/165868913-5dbf6a16-fbba-4fdf-bd24-ef6e6215dd68.png)
+![Screen Shot 2022-04-28 at 7 37 31 PM](https://user-images.githubusercontent.com/97326874/165869410-83aa61d8-84d9-4f00-a590-8e2faebfb087.png)
 
 
+**Wishlist**
 
-**Link to website**
+![Screen Shot 2022-04-28 at 7 37 12 PM](https://user-images.githubusercontent.com/97326874/165869334-4b6aaa5e-fdf9-4e66-bcb1-994cdb8f27de.png)
+
+**Visited**
+
+![Screen Shot 2022-04-28 at 7 36 36 PM](https://user-images.githubusercontent.com/97326874/165869349-1d22ed7f-223f-4376-8dae-e79b25de9836.png)
+
+**Details**
+
+![image](https://user-images.githubusercontent.com/97326874/165869521-0529f7e6-8a16-4e0f-a7c7-75f5e66a8243.png)
+
+
+**Edit**
+
+![Screen Shot 2022-04-28 at 7 38 09 PM](https://user-images.githubusercontent.com/97326874/165869382-e520d5b9-3329-47fa-a0f5-1d7d7068e2fd.png)
+
+**Error**
+
+![Screen Shot 2022-04-28 at 7 39 06 PM](https://user-images.githubusercontent.com/97326874/165869432-1bbf1139-e635-4963-9849-dd78c5febe2e.png)
+
+
+
+****Link to website****
 
 
 https://cesars-foodie-app.herokuapp.com/
 
-**
-MVP Goals**
+****MVP (Minimum Viable Product) Goals****
 
 1. Abiity to add a new restaurant.
 2. Ability to see details of places I want to try.
@@ -46,7 +63,7 @@ MVP Goals**
 6. Ability for user to edit the data that is auto populated via the API. 
 7. ABility to handle error if user enters a place that does not exist.
 
-**Future Add Ons**
+****Future Add Ons****
 
 1. Add user logins and allow users to share there lists with friends.
 2. Use google places API to get even more meta data.
